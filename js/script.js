@@ -21,7 +21,17 @@
 var vm = new Vue({
     el: '#markdown',
     data: {
-        input: "# Hello \n- Try"
+        input: "# Hello \n" +
+        "\n" +
+        "##### Try markdownlite like this :\n" +
+        "\n" +
+        "- List\n" +
+        "\n" +
+        "> quote\n" +
+        "\n" +
+        "```print(\"Hello, world\")```\n" +
+        "\n" +
+        "***and so on ...***"
     },
     // computed: {
     //     haha: function () {
@@ -39,3 +49,14 @@ var vm = new Vue({
         }
     }
 });
+
+//todo: save md file
+function saveFile() {
+    var win=window.open('','','top=10000,left=10000');
+    win.document.write(document.getElementById(content).innerHTML);
+    win.document.execCommand('SaveAs','',filename)
+    win.close();
+
+}
+
+//todo: rewrite compile markdown
