@@ -14,22 +14,25 @@
 </div>
 <div id="markdown">
     <div class="left">
-        <textarea class="markdown-area" v-model="message" placeholder="Add markdown here ..."></textarea>
+        <textarea :value="input" @input="update" class="markdown-area" placeholder="Add markdown here ..."></textarea>
     </div>
     <div class="right">
-        <!--<textarea class="display-area">{{ message }}</textarea>-->
+        <!--<textarea class="display-area" readonly="true">-->
+        <!--</textarea>-->
 
-        <p style="white-space: pre-line;">{{ message }}</p>
-        <p style="white-space: pre-line;">{{ dipalyMessage }}</p>
-
+        <div class="display-area" id="display-area">
+            <!--<p style="white-space: pre-line;" v-html="compiledMarkdown">{{ compiledMarkdown }}</p>-->
+            <div v-html="compiledMarkdown"></div>
+        </div>
     </div>
-    </div>
+</div>
 
 
 
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/vue.js"></script>
+<script src="js/marked.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
