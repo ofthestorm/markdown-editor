@@ -1,8 +1,18 @@
 ;$(function () {
     var windowHeight = $(window).height();
-    // alert(windowHeight);
-    var height = windowHeight - 70;
-    $('.left').css('height', height);
-    $('.right').css('height', height);
-    
+    $('.left').css('height', windowHeight - 70);
+    $('.right').css('height', windowHeight - 70);
+
+});
+
+var vm = new Vue({
+    el: '#markdown',
+    data: {
+        message: ""
+    },
+    computed: {
+        displayMessage: function () {
+            return this.message.join('!');
+        }
+    }
 });
