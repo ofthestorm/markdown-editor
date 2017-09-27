@@ -1091,8 +1091,8 @@
 * a button.
 */
 .button-glow {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     -webkit-animation-name: glowing;

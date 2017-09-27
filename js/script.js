@@ -7,20 +7,20 @@
     var displayScrollBar = $('#display-area');
     $('.markdown-area').keyup(function () {
         // alert("ha");
-        // alert(displayScrollBar.scrollTop);
-        displayScrollBar.scrollTop = displayScrollBar.scrollHeight;
+        //  alert($('#display-area')[0].scrollHeight);
+        console.log($('#display-area')[0].scrollHeight);
+        $('#display-area')[0].scrollTop = $('#display-area')[0].scrollHeight;
         // displayScrollBar.scrollTo('100%');
-
+        // $('#display-area').scrollTop(100);
     });
     // $('#display-area').stop().animate({
     //     scrollTop: $('#display-area')[0].scrollHeight
     // }, 800);
     $('#saveBtn').click(function () {
-        // var win=window.open('','','top=10000,left=10000');
-        // win.document.write(document.getElementById(content).innerHTML);
-        // win.document.execCommand('SaveAs','',filename)
-        // win.close();
+        var blob = new Blob([vm.input], {type: "text/plain;charset=utf-8"});
+        saveAs(blob, "MarkdownLite.md");
     });
+
 });
 
 var vm = new Vue({
@@ -55,12 +55,6 @@ var vm = new Vue({
     }
 });
 
-//todo: save md file
-function saveFile() {
-    var win=window.open('','','top=10000,left=10000');
-    win.document.write(document.getElementById(content).innerHTML);
-    win.document.execCommand('SaveAs','',filename)
-    win.close();
-}
+
 
 //todo: rewrite compile markdown
