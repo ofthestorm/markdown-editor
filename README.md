@@ -1,3 +1,3 @@
 # markdown-editor
 
-![](https://github.com/ofthestorm/markdown-editor/raw/master/img/screenshot.png)
+![](https://ws1.sinaimg.cn/large/006tKfTcly1fjyihtitosj31kw11eqfq.jpg)
