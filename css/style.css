@@ -20,7 +20,6 @@ body {
     position: absolute;
     left: 10px;
     top: 10px;
-    /*background-color: #999999;*/
 }
 .logo-content {
     font-family: 'Odale';
@@ -33,30 +32,24 @@ body {
     color: #33CCCC;
 }
 .save {
-    /*float: right;*/
     position: absolute;
     right: 10px;
     top: 10px;
     height: 50px;
     line-height: 50px;
-    /*background-color: #942a25;*/
 }
 .left {
-    /*padding: 10px;*/
     float: left;
     width: 50%;
     min-height: 100px;
     max-height: 1000px;
-    /*background-color: #0e0e0e;*/
     position: relative;
     top: 70px;
 
 }
 .right {
-    /*padding: 10px;*/
     float:right;
     width: 50%;
-    /*background-color: #999999;*/
     min-height: 100px;
     max-height: 1000px;
     position: relative;
@@ -84,7 +77,6 @@ textarea:focus {
 }
 .display-area {
     margin: 2%;
-    /*margin-bottom: 0;*/
     height: 92%;
     background-color: azure;
     opacity: 0.8;
@@ -93,7 +85,6 @@ textarea:focus {
     border-width: 1px;
     border-color: aqua;
     border-radius: 5px;
-    /*max-height: 92%;*/
     overflow-y: auto;
 }
 .pre-scrollable {
