@@ -5,23 +5,23 @@
     <title>Markdown Editor</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link rel="stylesheet" href="css/buttons.css">
 </head>
 <body>
 
 <div class="logo">
     <p class="logo-content">Markdown<span>Lite</span></p>
 </div>
+<div class="save">
+    <a id="saveBtn" href="#" class="button button-glow button-border button-capitalize button-rounded button-caution">Save markdown</a>
+</div>
 <div id="markdown">
     <div class="left">
         <textarea :value="input" @input="update" class="markdown-area" placeholder="Add markdown here ..."></textarea>
     </div>
     <div class="right">
-        <!--<textarea class="display-area" readonly="true">-->
-        <!--</textarea>-->
-
+        <!--<textarea class="display-area" readonly="true"></textarea>-->
         <div class="display-area" id="display-area">
-            <!--<p style="white-space: pre-line;" v-html="compiledMarkdown">{{ compiledMarkdown }}</p>-->
             <div v-html="compiledMarkdown"></div>
         </div>
     </div>

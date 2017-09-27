@@ -20,6 +20,7 @@ body {
     position: absolute;
     left: 10px;
     top: 10px;
+    /*background-color: #999999;*/
 }
 .logo-content {
     font-family: 'Odale';
@@ -30,6 +31,15 @@ body {
 }
 .logo-content span {
     color: #33CCCC;
+}
+.save {
+    /*float: right;*/
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 50px;
+    line-height: 50px;
+    /*background-color: #942a25;*/
 }
 .left {
     /*padding: 10px;*/
